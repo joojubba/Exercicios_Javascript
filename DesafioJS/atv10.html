@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="js9.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">   
+    <title>ATIVIDADE 10</title>
+</head>
+
+<body>
+  <ul>
+    <li><img src="imgs/js.png" alt="js"></li>
+    <li><a href="index.html">Página Inicial</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Atividades</a>
+      <div class="dropdown-content">
+        <a href="atv1.html">Atividade 1</a>
+        <a href="atv2.html">Atividade 2</a>
+        <a href="atv3.html">Atividade 3</a>
+        <a href="atv4.html">Atividade 4</a>
+        <a href="atv5.html">Atividade 5</a>
+        <a href="atv6-7-8.html">Atividade 6 a 8</a>
+        <a href="atv9.html">Atividade 9</a>
+        <a href="atv10.html">Atividade 10</a>
+      </div>         
+    </li>
+  </ul>
+    
+    <div class="texto">
+        <h1>Formulário</h1>
+        <h2>Preencha os dados</h2>
+    </div>
+
+<div class="container">
+    <form class="pure-form">
+    
+        <label for="nomeCompleto">Nome Completo: </label>
+        <input type="text" name ="nomeCompleto" id="nome" required><br>
+
+        <label for="pessoa">Pessoa:</label>
+        <input type="radio" onclick="pessoa1()" id="radio1" name="pessoa" value="fisica" required>Pessoa Física
+        <input type="radio" onclick="pessoa2()" id="radio2" name="pessoa" value="juridica" required>Pessoa Jurídica<br>
+        
+        <label for="cpf">CPF (apenas números):</label>
+        <input type="text" name ="cpf" id="cpf" required="required" pattern="[0-9]+$"><br>
+
+        <label for="cnpj">CNPJ (apenas números):</label>
+        <input type="text" name ="cnpj" id="cnpj" required="required" pattern="[0-9]+$"><br>
+
+        <label for="data">Data de Nascimento:</label>
+        <input type="text" name ="data" id="data" required="required" pattern="[0-9]+$"><br>
+        
+        <label for="end">Endereço:</label>
+        <input type="text" name ="end" id="end"><br>
+
+        <label for="cep">CEP (apenas números):</label>
+        <input type="text" onclick="numeros()" name ="cep" id="cep" pattern="[0-9]+$"><br>
+
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="telefone">Telefone: </label>
+        <input type="tel" id="telefone" name="telefone"><br>
+
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha" name="senha" required><br>
+    
+        <br>
+        <button type="submit" onclick="botao()">Envia</button>
+        <p id="demo"></p>
+      
+    </form>   
+  </div>
+  
+<script src="atv10.js"></script>
+
+</body>
+</html>

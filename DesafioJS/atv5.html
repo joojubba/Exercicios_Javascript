@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">   
+    <title>ATIVIDADE 05</title>
+    <style>     
+        .container{
+           
+            width: 100px;
+            height: 100px;
+            display:inline;
+            align-items: center;         
+        }
+         .container img{
+            width: 330px;
+            height: 330px;
+            object-fit: fill;
+            padding: 10px;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><img src="imgs/js.png" alt="js"></li>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Atividades</a>
+          <div class="dropdown-content">
+            <a href="atv1.html">Atividade 1</a>
+            <a href="atv2.html">Atividade 2</a>
+            <a href="atv3.html">Atividade 3</a>
+            <a href="atv4.html">Atividade 4</a>
+            <a href="atv5.html">Atividade 5</a>
+            <a href="atv6-7-8.html">Atividade 6 a 8</a>
+            <a href="atv9.html">Atividade 9</a>
+            <a href="atv10.html">Atividade 10</a>
+          </div>         
+        </li>
+      </ul>
+
+      <div class="texto">
+        <h1>Seleção de itens com checkbox</h1>
+        <h2>Ative o botão ao selecionar pelo menos 2 checkboxs</h2>
+        <p>Selecione seus oponentes <code style="text-decoration: line-through;color: red">favoritos</code> :</p>
+
+        <form action="" method="post">    
+            <input name="cottonmouth" onclick="checkbox()" type="checkbox" id="cottonmouth" >
+            <label for="cottonmouth">Cottonmouth</label><br>
+            
+            <input onclick="checkbox()" type="checkbox" id="californiaMountainSnake" name="californiaMountainSnake">
+            <label for="californiaMountainSnake">California Mountain Snake</label><br>
+            
+            <input onclick="checkbox()" type="checkbox" id="sidewinder" name="sidewinder">
+            <label for="sidewinder">Sidewinder</label><br><br>
+           
+            <input onclick="checkbox()" type="checkbox" id="copperhead" name="copperhead">
+            <label for="copperhead">Copperhead</label><br><br>
+            
+            <input onclick="checkbox()" type="checkbox" id="snakeCharmer" name="snakeCharmer">
+            <label for="snakeCharmer">Snake Charmer</label><br><br>    
+        </form>
+       
+      </div>
+        <div class="container">
+            <img src="imgs/IMG15.jpg" alt="cottonmouth"><img src="imgs/img14.jpg" alt="californiaMountainSnake"><img src="imgs/img16.jpg" alt="sidewinder"><img src="imgs/img17.webp" alt="copperhead"><img src="imgs/img18.webp" alt="snakeCharmer">
+        </div>
+        <div class="texto">
+            <button type="button" id="botao">Clique</button>
+        </div>
+
+<script src="atv5.js"></script>
+
+</body>
+</html>
